@@ -1,0 +1,35 @@
+.header-nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3rem;
+    
+}
+.header-nav img {
+    width: 10rem;
+}
+
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.li-1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.li-2 {
+    
+    list-style-type: none;
+    text-decoration: none;
+    color: #FF6060;
+    
+}
