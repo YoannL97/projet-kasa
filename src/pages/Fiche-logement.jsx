@@ -5,17 +5,13 @@ import {Header} from "../components/Header";
 import {Banniere} from "../components/Banniere"
 import {Card} from "../components/Card";
 
-export function Accueil () {
-
-
+export function FicheLogement () {
 
     return (
         <div>
             <Header />
-            <Banniere />
-            <Card />
+
         </div>
         )
 }
 
-export default Accueil;

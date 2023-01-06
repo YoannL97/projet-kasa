@@ -1,0 +1,40 @@
+.card-all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.card-content {
+    position: relative;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    /*background-color: #ff6060;*/
+    border-radius: 2rem;
+}
+
+.card-content img {
+    position: inherit;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+
+    
+}
+
+.card-content h2 {
+    position:absolute;
+    z-index:2;
+    bottom: 15px;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+}
