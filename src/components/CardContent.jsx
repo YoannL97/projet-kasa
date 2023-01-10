@@ -5,9 +5,10 @@ import "../styles/card.css"
 import "../pages/Fiche-logement"
 
 const CartContent = ({appart}) => {
-    console.log(appart);
     return (
-        <Link to="/fiche-logement">
+       
+        
+        <Link to={`/fiche-logement/${appart.id}`}>
             <div className="card-content">
                     <img src={appart.cover} />   
                     <h2>{appart.title}</h2>

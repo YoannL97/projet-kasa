@@ -1,4 +1,5 @@
 import { Component } from "react"
+import { Link } from "react-router-dom";
 
 import "../styles/header.css"
 
@@ -15,9 +16,11 @@ export function Header() {
             <li className="li-1">
                 accueil
             </li>
-            <li className="li-2">
-                A propos
-            </li>
+            <Link to="/Apropos">
+                <li className="li-2">
+                    A propos
+                </li>
+            </Link>
         </ul>
         
     </div>

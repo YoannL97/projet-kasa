@@ -5,16 +5,19 @@ import { Routes, Route} from "react-router-dom"
 
 import {Accueil} from './pages/Accueil'
 import {FicheLogement} from './pages/Fiche-logement'
-
-
+import {Erreur404} from './pages/404'
+import {Apropos} from './pages/Apropos'
 
 
 function App () {
   return (
     <Routes>
       <Route path="/" element= {<Accueil />} />
-      <Route path="/fiche-logement" element= {<FicheLogement />} />
-    </Routes>
+      <Route path="/fiche-logement/:id" element= {<FicheLogement />} />
+      <Route path="/Apropos" element= {<Apropos />} />
+      <Route path="*" element= {<Erreur404 />} />    
+      
+      </Routes>
   );
 }
 
