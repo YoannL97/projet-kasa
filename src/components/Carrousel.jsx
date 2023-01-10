@@ -1,4 +1,5 @@
 import {Component} from "react"
+import { useState } from "react";
 
 import flecheGauche from "../data/Vector.png"
 import flecheDroite from "../data/VectorD.png"
@@ -6,11 +7,9 @@ import flecheDroite from "../data/VectorD.png"
 import "../styles/carrousel.css"
 
 export function Carrousel ({images}) {
+    const [position, setposition] = useState(0)
     let nbrImage = images.length;
-    //console.log(nbrImage);
 
-    let longeur = document.querySelector(".carrousel-image")
-    //longeur.style.width = 
     return (
         <div className="carrousel">
             <div className="carrousel-content">
@@ -18,10 +17,18 @@ export function Carrousel ({images}) {
                 <img src={flecheGauche} className="fleche-gauche" />
                 <img src={flecheDroite} className="fleche-droite" />
 
-                {
-                images.map((image, index) => {
+                {images.map((image, index) => {
                     return(
-                        <img key={index} className="carrousel-image" src={image} />
+                        <div
+                            key={index}
+                            className={
+                                index === position ? "image-active" : "image-inactive"
+                            }
+                        >
+                            {index === position && (
+                                <img src={image} className="image-active" />
+                            )}
+                        </div>
                     )
                     }
                     )

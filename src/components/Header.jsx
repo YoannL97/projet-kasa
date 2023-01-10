@@ -13,9 +13,11 @@ export function Header() {
     <div className="header-nav">
         <img src={imageLogo} alt="logo" />
         <ul>
+            <Link to="/">
             <li className="li-1">
                 accueil
             </li>
+            </Link>
             <Link to="/Apropos">
                 <li className="li-2">
                     A propos

@@ -27,9 +27,10 @@
     top: 7rem;
     right: 1rem;
 }
-
-.carrousel-image {
+.image-active {
     width: 40rem;
     height: 20rem;
-    display: inline-block;
+}
+.image-inactive {
+    display: none;
 }
