@@ -8,8 +8,8 @@ const CartContent = ({appart}) => {
     return (
        
         
-        <Link to={`/fiche-logement/${appart.id}`}>
-            <div className="card-content">
+        <Link to={`/fiche-logement/${appart.id}`}  className="card-content">
+            <div>
                     <img src={appart.cover} />   
                     <h2>{appart.title}</h2>
             </div>

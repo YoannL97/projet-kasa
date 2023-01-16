@@ -1,31 +1,29 @@
 .card-all {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     background-color: #f6f6f6;
     padding: 1rem;
     border-radius: 1rem;
     margin-top: 2rem;
     margin-right: 5rem;
     margin-left: 5rem;
+    gap: 30px;
 }
 
 .card-content {
     position: relative;
     margin: 2rem auto;
-    /*background-color: #ff6060;*/
     border-radius: 2rem;
+    flex: 1 1 30%;
 }
 
 .card-content img {
-    position: inherit;
     z-index: 1;
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
     border-radius: 2rem;
-
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
     
 }
 

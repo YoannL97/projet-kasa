@@ -1,36 +1,29 @@
 .carrousel {
-    margin-top: 2rem;
-    border: 3px solid green;
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 500px;
 }
 
 .carrousel-content{
     position: relative;
-    border: 5px solid blue;
-    height: 20rem;
-    width: 40rem;
-    display: inline-block;
 }
 .fleche-gauche {
     position: absolute;
-    background-color: aqua;
-    top: 7rem;
+    top: 185px;
     left: 1rem;
 }
 .fleche-droite {
     position: absolute;
-    background-color: aqua;
-    top: 7rem;
+    top: 185px;
     right: 1rem;
 }
 .image-active {
-    width: 40rem;
-    height: 20rem;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 2rem;
 }
+
 .image-inactive {
     display: none;
 }

@@ -1,0 +1,55 @@
+
+.drop-down-fiche {
+    margin-top: 2rem;
+    width: 100%;
+    
+}
+
+.drop-down-haut {
+    background: #FF6060;
+    border-radius: 10px; 
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.drop-down-haut {
+    color: white;
+    margin: 0;
+    padding: 5px 20px 5px 20px;
+}
+
+.on p {
+    margin: 0;
+    color:#FF6060;
+    padding: 25px 10px 25px 10px;
+
+}
+
+.on p li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.on {
+    
+    height: 100%;
+    background-color:#F6F6F6 ;
+
+}
+
+.off {
+    display: none;
+}
+
+.drop-down-Apropos {
+    width: 100%;
+    padding: 20px 120px 80px 120px;
+}
+.ijiuoij {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
