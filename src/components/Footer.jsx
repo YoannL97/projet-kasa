@@ -9,7 +9,7 @@ export function Footer () {
         <div className="footer">
             <div className="footer-content">
                 <img src={logoBlanc} />
-                <p>2020 Kasa. All rights reserved</p>
+                <p>© 2020 Kasa. All rights reserved</p>
             </div>
         </div>
     )

@@ -1,11 +1,8 @@
 .header-nav {
-    
+    padding: 50px 100px 50px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 3rem;
     
 }
 .header-nav img {
@@ -20,16 +17,9 @@
     gap: 5rem;
 }
 
-.li-1 {
+.header-nav a {
     list-style-type: none;
     text-decoration: none;
-    color: #FF6060;
-}
 
-.li-2 {
-    
-    list-style-type: none;
-    text-decoration: none;
     color: #FF6060;
-    
 }

@@ -43,11 +43,11 @@
     display: none;
 }
 
-.drop-down-Apropos {
+.drop-down-Apropos-content {
     width: 100%;
     padding: 20px 120px 80px 120px;
 }
-.ijiuoij {
+.drop-down-Apropos {
     display: flex;
     justify-content: center;
     align-items: center;

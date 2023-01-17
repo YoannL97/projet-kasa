@@ -8,8 +8,8 @@ import apparts from "../logementData/data.json"
 import {Header} from "../components/Header";
 import { Carrousel } from "../components/Carrousel";
 import {DropDown} from "../components/DropDown"
+import {Footer} from "../components/Footer"
 import Tag from "../components/Tag";
-
 
 export function FicheLogement () {
     const appartId = useParams();
@@ -24,7 +24,9 @@ export function FicheLogement () {
     }
     )
 
-
+    const star = appart.rating
+    const etoileNbr = parseInt(star)
+    
     return (
         
 
@@ -43,16 +45,22 @@ export function FicheLogement () {
                         <h2>{appart.host.name}</h2>  
                         <img src={appart.host.picture} />
                     </div>
-                    <div className="etoile"></div>
+                    <div className="etoile">
+                        <div className={etoileNbr >= 1 ? "etoile-orange" : "etoile-grise"}></div>
+                        <div className={etoileNbr >= 2 ? "etoile-orange" : "etoile-grise"}></div>
+                        <div className={etoileNbr >= 3 ? "etoile-orange" : "etoile-grise"}></div>
+                        <div className={etoileNbr >= 4 ? "etoile-orange" : "etoile-grise"}></div>
+                        <div className={etoileNbr >= 5 ? "etoile-orange" : "etoile-grise"}></div>
+                    </div>
                 </div>
 
             </div>
 
             <div className="fiche-logement-dropdown">
                 <DropDown content={appart.description} nom="description"/>
-            
                 <DropDown content={equipLogement} nom="Equipements" className="fiche-logement-equipement" />
             </div>
+            <Footer />
         </div>
         )
 }
