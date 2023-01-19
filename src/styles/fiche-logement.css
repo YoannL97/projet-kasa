@@ -54,3 +54,14 @@
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 768px) {
+    .appartement-info {
+        margin: 20px 20px 20px 20px;
+        display: block;
+    }
+    .fiche-logement-dropdown {
+        margin: 20px 20px 60px 20px;
+    }
+
+  }

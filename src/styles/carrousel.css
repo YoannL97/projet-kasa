@@ -28,3 +28,10 @@
 .image-inactive {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .carrousel {
+        margin: 20px 20px 20px 20px;
+    }
+    
+  }

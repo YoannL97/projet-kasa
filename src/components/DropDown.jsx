@@ -16,7 +16,7 @@ export function DropDown (props) {
                 
                 <p>{props.nom}</p>
                 
-                <img src={fleche} onClick={() => open(!close)}/>
+                <img src={fleche} onClick={() => open(!close)} className={close ? "haut" : "bas"}/>
                 
             </div>
             <div className={close ? "on" : "off"}>

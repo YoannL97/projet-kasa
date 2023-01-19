@@ -11,9 +11,6 @@
     padding: 10px 5px 10px 5px;
     display: flex;
     justify-content: space-between;
-    
-}
-.drop-down-haut {
     color: white;
     margin: 0;
     padding: 5px 20px 5px 20px;
@@ -43,6 +40,16 @@
     display: none;
 }
 
+.haut {
+    transform: rotate(1turn);
+    transition-delay: 20ms;
+}
+.bas {
+    transform: rotate(0.5turn);
+}
+
+
+
 .drop-down-Apropos-content {
     width: 100%;
     padding: 20px 120px 80px 120px;
@@ -53,3 +60,10 @@
     align-items: center;
     
 }
+
+@media (max-width: 768px) {
+    .drop-down-Apropos-content  {
+        padding: 20px 20px 20px 20px;
+    }
+
+  }

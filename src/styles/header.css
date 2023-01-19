@@ -15,11 +15,25 @@
     justify-content: space-around;
     align-items: center;
     gap: 5rem;
+    padding: 0;
 }
 
 .header-nav a {
     list-style-type: none;
     text-decoration: none;
-
     color: #FF6060;
 }
+
+.header-nav a:hover {
+    border-bottom: 1px solid #FF6060;
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        padding: 20px 20px 20px 20px;
+    }
+    .header-nav ul {
+        gap: 30px;
+    }
+
+  }
