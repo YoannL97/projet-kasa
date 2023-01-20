@@ -6,7 +6,7 @@ import {Banniere} from "../components/Banniere"
 import { DropDown } from "../components/DropDown";
 import {Footer} from "../components/Footer"
 
-import imageBack from "../data/imageApropos.svg"
+import imageBack from "../data/imageApropos.jpg"
 
 export function Apropos () {
 

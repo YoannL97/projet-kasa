@@ -1,8 +1,9 @@
-.fiche-logement h1 {
-    color: #FF6060;
-}
+
 .tags {
-    margin-top: 38px;
+    margin-top: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
 }
 .tag {
     background-color: #FF6060;
@@ -20,9 +21,15 @@
 
 .appartement-info {
     color: #FF6060;
-    margin: 20px 100px 20px 100px;
+    margin: 10px 100px 20px 100px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.appartement-info p {
+    font-size: 20px;
+    font-weight: 600 ;
 }
 
 .host-info {
@@ -40,7 +47,7 @@
 
 .etoile {
     display: flex;
-    
+    margin-top: 25px;
 }
 
 .etoile-grise {
@@ -57,11 +64,29 @@
 
 @media (max-width: 768px) {
     .appartement-info {
-        margin: 20px 20px 20px 20px;
+        margin: 10px 20px 20px 20px;
         display: block;
     }
-    .fiche-logement-dropdown {
-        margin: 20px 20px 60px 20px;
+    .appartement-info p {
+        font-size: 19px;
     }
-
+    .fiche-logement-dropdown {
+        margin: 20px 20px 90px 20px;
+        display: block;
+    }
+    .div-info-bas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    }
+    .host-info h2 {
+        font-size: 17px;
+    }
+    .fiche-logement h1 {
+    margin: 0;
+    }
+    .tags {
+        margin-top: 15px;
+    }
   }

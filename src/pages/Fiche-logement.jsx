@@ -40,7 +40,7 @@ export function FicheLogement () {
             
                     <div className="tags">{tagsLogement}</div>
                 </div> 
-                <div>
+                <div className="div-info-bas">
                     <div className="host-info">
                         <h2>{appart.host.name}</h2>  
                         <img src={appart.host.picture} />

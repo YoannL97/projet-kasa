@@ -1,5 +1,5 @@
 .banniere {
-    height: 15.3rem;
+    height: 220px;
     position: relative;
     margin-top: 30px;
     margin: 30px 100px 30px 100px;
@@ -27,8 +27,8 @@
     position: absolute;
     width: 100%;
     font-size: 3rem;
-    font-weight: 500;
-    line-height: 4.8;
+    font-weight: 400;
+    top: calc(50% - 2.4rem);
     text-align: center;
     color: #fff;
     z-index: 1;
@@ -37,10 +37,12 @@
   @media (max-width: 768px) {
     .banniere {
         margin: 20px 20px 20px 20px;
+        height: 150px;
     }
     .banniere p {
-      font-size: 40px;
-      width: min-content;
+      font-size: 30px;
+      top: calc(50% - 1.5rem);
+      /* width: min-content; */
     }
 
   }

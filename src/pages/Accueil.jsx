@@ -15,8 +15,10 @@ export function Accueil () {
     return (
         <div>
             <Header />
-            <Banniere image={imageBack} texte="Chez vous partout et ailleur"/>
+            <main>
+            <Banniere image={imageBack} texte="Chez vous partout et ailleurs"/>
             <Card />
+            </main>
             <Footer />
         </div>
         )

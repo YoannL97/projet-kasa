@@ -1,6 +1,5 @@
 .carrousel {
-    height: 500px;
-    margin: 20px 100px 20px 100px;
+    margin: 0px 100px 0px 100px;
 }
 
 .carrousel-content{
@@ -8,12 +7,12 @@
 }
 .fleche-gauche {
     position: absolute;
-    top: 185px;
+    top: 160px;
     left: 1rem;
 }
 .fleche-droite {
     position: absolute;
-    top: 185px;
+    top: 160px;
     right: 1rem;
 }
 .image-active {
@@ -22,7 +21,6 @@
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
-    margin-top: 2rem;
 }
 
 .image-inactive {
@@ -31,7 +29,18 @@
 
 @media (max-width: 768px) {
     .carrousel {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 20px 0px 20px;
     }
-    
+    .fleche-droite {
+        height: 50px;
+        top: 138px;
+    }
+    .fleche-gauche {
+        height: 50px;
+        top: 138px;
+    }
+    .image-active {
+        margin-top: 0;
+        height: 320px;
+    }
   }
