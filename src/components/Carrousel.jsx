@@ -55,11 +55,11 @@ export function Carrousel ({images}) {
                 }
                 {
 
-                <img src={flecheGauche} className="fleche-gauche" onClick={imagePrecedent} />
+                nbrImage > 1 && <img src={flecheGauche} className="fleche-gauche" onClick={imagePrecedent} />
                 }
 
                 {
-                <img src={flecheDroite} className="fleche-droite" onClick={imageSuivante} />
+                nbrImage > 1 && <img src={flecheDroite} className="fleche-droite" onClick={imageSuivante} />
                 }
                 {
                 <p className="texte-position">{position + 1}/{nbrImage}</p>

@@ -20,7 +20,7 @@ export function FicheLogement () {
     });
 
     const equipLogement = appart.equipments.map((equipement, index) => {
-        return <li>{equipement}</li>
+        return <li key={index}>{equipement}</li>
     }
     )
 

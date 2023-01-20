@@ -4,8 +4,6 @@ import "../styles/card.css"
 
 import data from "../logementData/data.json"
 import CartContent from "./CardContent";
-console.log(data);
-
 
 export function Card () {
     return (

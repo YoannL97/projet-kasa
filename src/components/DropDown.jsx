@@ -12,7 +12,7 @@ export function DropDown (props) {
 
     return(
         <div className="drop-down-fiche">
-            <div class="drop-down-haut">
+            <div className="drop-down-haut">
                 
                 <p>{props.nom}</p>
                 
