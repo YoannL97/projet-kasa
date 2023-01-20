@@ -61,6 +61,9 @@ export function Carrousel ({images}) {
                 {
                 <img src={flecheDroite} className="fleche-droite" onClick={imageSuivante} />
                 }
+                {
+                <p className="texte-position">{position + 1}/{nbrImage}</p>
+                }
             </div>
         </div>
     )
