@@ -1,8 +1,6 @@
-import {Component} from "react";
-import { useParams } from "react-router-dom"
-
+import { useEffect } from "react";
+import { useParams, Navigate} from "react-router-dom"
 import "../styles/fiche-logement.css"
-
 import apparts from "../logementData/data.json"
 
 import {Header} from "../components/Header";
@@ -11,9 +9,13 @@ import {DropDown} from "../components/DropDown"
 import {Footer} from "../components/Footer"
 import Tag from "../components/Tag";
 
+import { Erreur404 } from "./404";
+
 export function FicheLogement () {
     const appartId = useParams();
     const appart = apparts.find( logement => logement.id === appartId.id);
+
+
     
     const tagsLogement = appart.tags.map((tags, index) => {
         return <Tag key={index} tags={tags} />
@@ -26,10 +28,15 @@ export function FicheLogement () {
 
     const star = appart.rating
     const etoileNbr = parseInt(star)
-    
-    return (
-        
 
+     if (appart) {
+       return <Navigate to="/404" replace={true}/>
+    }
+    
+    
+    return ( 
+      
+        
         <div className="fiche-logement">
             <Header /> 
             <Carrousel images={appart.pictures} />
@@ -62,6 +69,8 @@ export function FicheLogement () {
             </div>
             <Footer />
         </div>
-        )
+    )
+   
 }
+
 
