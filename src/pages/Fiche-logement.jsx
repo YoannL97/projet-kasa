@@ -9,14 +9,20 @@ import {DropDown} from "../components/DropDown"
 import {Footer} from "../components/Footer"
 import Tag from "../components/Tag";
 
-import { Erreur404 } from "./404";
-
 export function FicheLogement () {
     const appartId = useParams();
     const appart = apparts.find( logement => logement.id === appartId.id);
 
+if (appart == null) {
+    return <Navigate to="/404" replace={true}/>
+}
+     
 
+console.log(appart.id)
+console.log(appartId.id)
     
+
+
     const tagsLogement = appart.tags.map((tags, index) => {
         return <Tag key={index} tags={tags} />
     });
@@ -29,14 +35,11 @@ export function FicheLogement () {
     const star = appart.rating
     const etoileNbr = parseInt(star)
 
-     if (appart) {
-       return <Navigate to="/404" replace={true}/>
-    }
-    
-    
-    return ( 
-      
+    // return <Navigate to="/404" replace={true}/>
+
         
+    return ( 
+
         <div className="fiche-logement">
             <Header /> 
             <Carrousel images={appart.pictures} />
@@ -69,8 +72,8 @@ export function FicheLogement () {
             </div>
             <Footer />
         </div>
+    
     )
-   
 }
 
 

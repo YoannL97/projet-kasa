@@ -16,7 +16,6 @@ function App () {
       <Route path="/" element= {<Accueil />} />
       <Route path="/fiche-logement/:id" element= {<FicheLogement />} />
       <Route path="/Apropos" element= {<Apropos />} />
-      <Route path='/404' element={<Erreur404 />} />
       <Route path="*" element= {<Erreur404 />} />    
       
 
