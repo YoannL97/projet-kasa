@@ -16,12 +16,6 @@ export function FicheLogement () {
 if (appart == null) {
     return <Navigate to="/404" replace={true}/>
 }
-     
-
-console.log(appart.id)
-console.log(appartId.id)
-    
-
 
     const tagsLogement = appart.tags.map((tags, index) => {
         return <Tag key={index} tags={tags} />
@@ -67,7 +61,7 @@ console.log(appartId.id)
             </div>
 
             <div className="fiche-logement-dropdown">
-                <DropDown content={appart.description} nom="description"/>
+                <DropDown content={appart.description} nom="Description"/>
                 <DropDown content={equipLogement} nom="Equipements" className="fiche-logement-equipement" />
             </div>
             <Footer />

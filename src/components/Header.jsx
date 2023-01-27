@@ -8,19 +8,19 @@ import imageLogo from '../data/LOGO.png'
 
 
 
-export function Header() {
+export function Header({accueil, apropos}) {
     return (
     <div className="header-nav">
         <img src={imageLogo} alt="logo" />
         <ul>
             <Link to="/">
-            <li className="li-1">
-                accueil
+            <li className={accueil ? "active" : "none"}>
+                Accueil
             </li>
             </Link>
             <Link to="/Apropos">
-                <li className="li-2">
-                    A propos
+                <li className={apropos ? "active" : "none"}>
+                    A Propos
                 </li>
             </Link>
         </ul>

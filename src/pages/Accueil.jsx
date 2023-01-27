@@ -14,9 +14,9 @@ export function Accueil () {
 
     return (
         <div>
-            <Header />
+            <Header accueil="active" />
             <main>
-            <Banniere image={imageBack} texte="Chez vous partout et ailleurs"/>
+            <Banniere image={imageBack} texte="Chez vous, partout et ailleurs"/>
             <Card />
             </main>
             <Footer />

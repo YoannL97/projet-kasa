@@ -21,7 +21,7 @@
 
 .appartement-info {
     color: #FF6060;
-    margin: 10px 100px 20px 100px;
+    margin: 25px 100px 20px 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@
 
 .appartement-info p {
     font-size: 20px;
-    font-weight: 600 ;
+    font-weight: 500 ;
 }
 
 .host-info {
@@ -38,6 +38,10 @@
     align-items: center;
     gap: 20px;
     width : min-content;
+}
+
+.host-info h2 {
+    font-weight: 500;
 }
 .host-info img {
     height: 64px;

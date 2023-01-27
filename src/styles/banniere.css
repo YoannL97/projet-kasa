@@ -26,9 +26,9 @@
     margin: 0;
     position: absolute;
     width: 100%;
-    font-size: 3rem;
-    font-weight: 400;
-    top: calc(50% - 2.4rem);
+    font-size: 48px;
+    font-weight: 500;
+    top: calc(50% - 24px);
     text-align: center;
     color: #fff;
     z-index: 1;
@@ -41,8 +41,7 @@
     }
     .banniere p {
       font-size: 30px;
-      top: calc(50% - 1.3rem);
-      /* width: min-content; */
+      top: calc(50% - 18px);
     }
 
   }

@@ -14,7 +14,7 @@ export function Apropos () {
 
     return (
         <div>
-            <Header />
+            <Header apropos="active" />
             <Banniere image={imageBack} />
             <div className="drop-down-Apropos">
                 <div className="drop-down-Apropos-content">
